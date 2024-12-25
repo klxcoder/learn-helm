@@ -42,3 +42,7 @@ install_prod:
 .PHONY: ls_prod
 ls_prod:
 	helm ls -n prod
+
+.PHONY: ls_all
+ls_all:
+	helm ls --all-namespaces
