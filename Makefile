@@ -21,3 +21,8 @@ upgrade:
 .PHONY: uninstall
 uninstall:
 	helm uninstall mywebapp-release
+
+.PHONY: create_namespaces
+create_namespaces:
+	kubectl create namespace dev
+	kubectl create namespace prod
