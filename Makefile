@@ -14,6 +14,14 @@ get_all:
 service:
 	minikube service myhelmapp
 
+.PHONY: service_dev
+service_dev:
+	minikube service myhelmapp -n dev
+
+.PHONY: service_prod
+service_prod:
+	minikube service myhelmapp -n prod
+
 .PHONY: upgrade
 upgrade:
 	helm upgrade mywebapp-release .
