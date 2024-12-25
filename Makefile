@@ -2,8 +2,8 @@
 install:
 	helm install mywebapp-release .
 
-.PHONY: helm_ls
-helm_ls:
+.PHONY: ls
+ls:
 	helm ls
 
 .PHONY: get_all
