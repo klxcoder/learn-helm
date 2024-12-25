@@ -9,3 +9,7 @@ kubectl_get_all:
 .PHONY: minikube_service_mywebapp
 minikube_service_mywebapp:
 	minikube service mywebapp
+
+.PHONY: upgrade
+upgrade:
+	helm upgrade mywebapp-release .
