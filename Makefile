@@ -12,7 +12,7 @@ get_all:
 
 .PHONY: service
 service:
-	minikube service mywebapp
+	minikube service myhelmapp
 
 .PHONY: upgrade
 upgrade:
