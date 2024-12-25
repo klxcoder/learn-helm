@@ -34,3 +34,11 @@ install_dev:
 .PHONY: ls_dev
 ls_dev:
 	helm ls -n dev
+
+.PHONY: install_prod
+install_prod:
+	helm install mywebapp-release-prod . --values values.yaml -f values-prod.yaml -n prod
+
+.PHONY: ls_prod
+ls_prod:
+	helm ls -n prod
