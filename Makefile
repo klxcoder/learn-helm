@@ -2,10 +2,6 @@
 install:
 	helm install mywebapp-release .
 
-.PHONY: uninstall
-uninstall:
-	helm uninstall mywebapp-release
-
 .PHONY: helm_ls
 helm_ls:
 	helm ls
