@@ -13,3 +13,7 @@ minikube_service_mywebapp:
 .PHONY: upgrade
 upgrade:
 	helm upgrade mywebapp-release .
+
+.PHONY: helm_ls
+helm_ls:
+	helm ls
