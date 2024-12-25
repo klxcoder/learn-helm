@@ -26,3 +26,11 @@ uninstall:
 create_namespaces:
 	kubectl create namespace dev
 	kubectl create namespace prod
+
+.PHONY: install_dev
+install_dev:
+	helm install mywebapp-release-dev . --values values.yaml -f values-dev.yaml -n dev
+
+.PHONY: ls_dev
+ls_dev:
+	helm ls -n dev
