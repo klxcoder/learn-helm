@@ -17,3 +17,7 @@ minikube_service_mywebapp:
 .PHONY: upgrade
 upgrade:
 	helm upgrade mywebapp-release .
+
+.PHONY: uninstall
+uninstall:
+	helm uninstall mywebapp-release
