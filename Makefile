@@ -6,8 +6,8 @@ install:
 helm_ls:
 	helm ls
 
-.PHONY: kubectl_get_all
-kubectl_get_all:
+.PHONY: get_all
+get_all:
 	kubectl get all
 
 .PHONY: service
